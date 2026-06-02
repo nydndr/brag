@@ -1,0 +1,28 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import BragList from '../components/BragList.astro';
+import type { BragEntry } from '../types/brag';
+import bragsData from '../data/brags.json';
+
+const entries = bragsData as BragEntry[];
+const count = entries.length;
+---
+<BaseLayout title="/brag directory" description="A public listing of people's brag pages — wins, projects, and who they are.">
+  <div class="mb-8">
+    <h1 class="text-2xl font-semibold tracking-tight mb-2">/brag directory</h1>
+    <p class="text-sm text-gray-500 leading-relaxed max-w-xl">
+      A public listing of people's brag pages — professional wins, projects, and who they are.
+      {' '}<a href="/submit" class="text-blue-500 hover:underline">Add yours →</a>
+    </p>
+  </div>
+
+  <div class="flex items-center gap-4 py-2 px-3 text-xs font-semibold text-gray-400 uppercase tracking-wider border-b border-gray-200">
+    <span class="w-32 shrink-0">Name</span>
+    <span class="flex-1">Description</span>
+    <span class="w-44 shrink-0 text-right">Page</span>
+  </div>
+
+  <BragList entries={entries} />
+
+  <p class="text-xs text-gray-400 mt-5">{count} {count === 1 ? 'entry' : 'entries'}</p>
+</BaseLayout>

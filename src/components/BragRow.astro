@@ -1,0 +1,33 @@
+---
+import type { BragEntry } from '../types/brag';
+
+interface Props {
+  entry: BragEntry;
+}
+
+const { entry } = Astro.props;
+
+let displayUrl: string;
+try {
+  const url = new URL(entry.brag_url);
+  displayUrl = url.hostname + (url.pathname !== '/' ? url.pathname.replace(/\/$/, '') : '');
+} catch {
+  displayUrl = entry.brag_url;
+}
+---
+<a
+  href={entry.brag_url}
+  target="_blank"
+  rel="noopener noreferrer"
+  class="group flex items-center gap-4 py-3 px-3 -mx-3 rounded-lg hover:bg-gray-50 transition-colors"
+>
+  <span class="w-32 shrink-0 font-medium text-sm text-gray-900 truncate">
+    {entry.name}
+  </span>
+  <span class="flex-1 min-w-0 text-sm text-gray-500 truncate">
+    {entry.description}
+  </span>
+  <span class="w-44 shrink-0 text-right text-xs font-mono text-gray-400 group-hover:text-blue-500 truncate transition-colors">
+    {displayUrl}
+  </span>
+</a>

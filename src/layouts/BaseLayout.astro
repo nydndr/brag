@@ -1,0 +1,49 @@
+---
+import '../styles/global.css';
+
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const {
+  title = '/brag directory',
+  description = 'A public directory of people who have /brag pages. Add yours with a pull request.',
+} = Astro.props;
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content={description} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <title>{title}</title>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  </head>
+  <body class="bg-white text-gray-900 min-h-screen flex flex-col antialiased">
+    <header class="border-b border-gray-100">
+      <div class="max-w-3xl mx-auto px-4 sm:px-6 h-14 flex items-center justify-between">
+        <a href="/" class="font-semibold text-sm tracking-tight hover:text-blue-500 transition-colors">/brag</a>
+        <nav class="flex items-center gap-6 text-sm text-gray-500">
+          <a href="/" class="hover:text-gray-900 transition-colors">Directory</a>
+          <a href="/submit" class="hover:text-gray-900 transition-colors">Add yours</a>
+        </nav>
+      </div>
+    </header>
+    <main class="flex-1 max-w-3xl mx-auto w-full px-4 sm:px-6 py-10">
+      <slot />
+    </main>
+    <footer class="border-t border-gray-100 mt-auto">
+      <div class="max-w-3xl mx-auto px-4 sm:px-6 py-4 flex items-center justify-between text-xs text-gray-400">
+        <span>
+          Built by
+          <a href="#" class="hover:text-gray-600 underline underline-offset-2 transition-colors">[YOUR NAME HERE]</a>
+        </span>
+        <a href="/submit" class="hover:text-gray-600 transition-colors">Add yours →</a>
+      </div>
+    </footer>
+  </body>
+</html>
