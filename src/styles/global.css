@@ -1,6 +1,21 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
 @theme {
-  --font-family-sans: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-  --font-family-mono: ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, Consolas, monospace;
+  --font-family-sans: 'Anek Bangla', system-ui, -apple-system, sans-serif;
+  --font-family-mono: 'Source Code Pro', ui-monospace, 'Cascadia Code', Menlo, Consolas, monospace;
+}
+
+:root {
+  --font-sans: 'Anek Bangla', system-ui, -apple-system, sans-serif;
+  --font-mono: 'Source Code Pro', ui-monospace, 'Cascadia Code', Menlo, Consolas, monospace;
+  --color-background: #ffffff;
+  --color-foreground: #111827;
+}
+
+.outline-text {
+  text-shadow:
+    -1px -1px 0 oklch(62.3% 0.214 259.815),
+    1px -1px 0 oklch(62.3% 0.214 259.815),
+    -1px 1px 0 oklch(62.3% 0.214 259.815),
+    1px 1px 0 oklch(62.3% 0.214 259.815);
 }

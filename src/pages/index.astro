@@ -7,22 +7,49 @@ import bragsData from '../data/brags.json';
 const entries = bragsData as BragEntry[];
 const count = entries.length;
 ---
-<BaseLayout title="/brag directory" description="A public listing of people's brag pages — wins, projects, and who they are.">
-  <div class="mb-8">
-    <h1 class="text-2xl font-semibold tracking-tight mb-2">/brag directory</h1>
-    <p class="text-sm text-gray-500 leading-relaxed max-w-xl">
-      A public listing of people's brag pages — professional wins, projects, and who they are.
-      {' '}<a href="/submit" class="text-blue-500 hover:underline">Add yours →</a>
-    </p>
+
+<BaseLayout
+  title="/brag pages"
+  description="A public collection of all brag pages — the real resumé of your wins, projects and who you are."
+>
+  <div class="min-h-screen">
+    <section class="grid grid-cols-5 gap-12">
+      <div class="col-span-2 flex flex-col justify-end">
+        <h2 class="text-lg leading-relaxed tracking-wide text-gray-400">
+          Resumés are the standard.<br />You are above the standard.
+        </h2>
+        <p class="text-blue-500 leading-relaxed max-w-xl text-5xl font-bold">\brag about it</p>
+      </div>
+
+      <div class="col-span-3 space-y-4">
+        <p class="text-blue-500 leading-relaxed max-w-xl text-2xl">
+          A collection of every personal website that has a brag page on it. A place for you to show
+          everything that doesn't fit in the lines of a resumé. To inspire and to hire.
+        </p>
+
+        <div class="flex gap-4">
+          <a href="/submit" class="text-blue-500 border-text-blue-500 border-b"
+            >What is a /brag page?</a
+          >
+          <a href="/submit" class="text-blue-500 border-text-blue-500 border-b"
+            >How to submit mine?</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <div class="mt-24">
+      <div
+        class="flex items-center gap-4 py-2 px-3 text-xs font-semibold text-gray-400 uppercase tracking-wider border-b border-gray-200"
+      >
+        <span class="w-32 shrink-0">Name</span>
+        <span class="flex-1">Description</span>
+        <span class="w-44 shrink-0 text-right">Page</span>
+      </div>
+
+      <BragList entries={entries} />
+
+      <p class="text-xs text-gray-400 mt-5">{count} {count === 1 ? 'entry' : 'entries'}</p>
+    </div>
   </div>
-
-  <div class="flex items-center gap-4 py-2 px-3 text-xs font-semibold text-gray-400 uppercase tracking-wider border-b border-gray-200">
-    <span class="w-32 shrink-0">Name</span>
-    <span class="flex-1">Description</span>
-    <span class="w-44 shrink-0 text-right">Page</span>
-  </div>
-
-  <BragList entries={entries} />
-
-  <p class="text-xs text-gray-400 mt-5">{count} {count === 1 ? 'entry' : 'entries'}</p>
 </BaseLayout>

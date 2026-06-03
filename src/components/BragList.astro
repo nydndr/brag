@@ -8,12 +8,20 @@ interface Props {
 
 const { entries } = Astro.props;
 ---
-{entries.length === 0 ? (
-  <p class="text-sm text-gray-400 py-12 text-center">
-    No entries yet. <a href="/submit" class="text-blue-500 hover:underline">Be the first →</a>
-  </p>
-) : (
-  <div class="divide-y divide-gray-100">
-    {entries.map((entry) => <BragRow entry={entry} />)}
-  </div>
-)}
+
+{
+  entries.length === 0 ? (
+    <p class="text-sm text-gray-400 py-12 text-center">
+      No entries yet.{' '}
+      <a href="/submit" class="text-blue-500 hover:underline">
+        Be the first →
+      </a>
+    </p>
+  ) : (
+    <div class="divide-y divide-gray-100">
+      {entries.map((entry) => (
+        <BragRow entry={entry} />
+      ))}
+    </div>
+  )
+}

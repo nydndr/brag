@@ -1,0 +1,219 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout
+  title="About — \brag pages"
+  description="What is a brag page and why you should have one."
+>
+  <div class="max-w-6xl">
+    <div>
+      <h1 class="text-9xl tracking-tight font-semibold leading-tight mb-2 text-blue-500/15">
+        About
+      </h1>
+
+      <div class="carousel-wrapper">
+        <div class="carousel">
+          <div class="carousel-track text-blue-600">
+            <a href="#what-is-a-brag-page">What is a /brag page?</a>
+            <a href="#who-came-up-with-the-idea">Who came up with the idea?</a>
+            <a href="#how-to-submit">How can I submit my /brag page?</a>
+            <a href="#how-to-remove">How can I remove my /brag page?</a>
+            <a href="#how-does-this-work">How does this website work?</a>
+            <a href="#suggestions">So... I have a suggestion!</a>
+            <!-- duplicated for seamless loop -->
+            <a href="#what-is-a-brag-page" aria-hidden="true">What is a /brag page?</a>
+            <a href="#who-came-up-with-the-idea" aria-hidden="true">Who came up with the idea?</a>
+            <a href="#how-to-submit" aria-hidden="true">How can I submit my /brag page?</a>
+            <a href="#how-to-remove" aria-hidden="true">How can I remove my /brag page?</a>
+            <a href="#how-does-this-work" aria-hidden="true">How does this website work?</a>
+            <a href="#suggestions" aria-hidden="true">So... I have a suggestion!</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="leading-loose mt-10 grid grid-cols-2 gap-12 divide-amber-100 divide-dashed">
+      <article id="what-is-a-brag-page" class="space-y-4">
+        <div class="space-y-2">
+          <h2 class="text-2xl font-semibold text-blue-500">What is a /brag page?</h2>
+          <p class="w-4/5">
+            A <span class="bg-zinc-100 px-2 rounded-sm">/brag</span> page is a personal page where you
+            tell people about your professional wins<sup>(*):</sup> what have you shipped, what are you
+            definetely the best at, what excites the most about your work? <span
+              class="font-semibold">It is an evolving and opiniated record of your career.</span
+            >
+          </p>
+          <p class="w-4/5">This is a collection of all /brag pages submitted by users.</p>
+        </div>
+
+        <div class="space-y-2">
+          <h3 class="text-xl text-zinc-400">Isn't that what that blue app does?</h3>
+          <p class="w-4/5">
+            Not even close. That app is a platform that owns your data, curates your presentation
+            and buries your wins in an algorithm. <span class="font-semibold"
+              >A /brag page is yours - your domain, your format, your voice</span
+            >. Do it as you please. Share it with us, please.
+          </p>
+        </div>
+      </article>
+
+      <article id="who-came-up-with-the-idea" class="space-y-4">
+        <div class="space-y-2">
+          <h2 class="text-2xl font-semibold text-blue-500">Who came up with \brag pages?</h2>
+          <p class="w-4/5">
+            <a href="https://x.com/aarondfrancis" target="_blank" class="text-blue-500"
+              >Aaron Francis</a
+            >, the 2x dad of twins and father of <a
+              href="https://soloterm.com/"
+              target="_blank"
+              class="text-blue-500">Solo</a
+            > (not a Solo dad though, kudos to Jenifer) and <a
+              href="https://x.com/IanLandsman"
+              target="_blank"
+              class="text-blue-500">Ian Landsman</a
+            >, The Business Dad, initiated the talks about brag pages on episode 132 of The Mostly
+            Technical Podcast.
+          </p>
+          <div class="flex flex-col gap-4">
+            <a href="/submit" class="text-blue-500 border-text-blue-500 border-b w-fit"
+              >Listen to Mostly Technical Podcast</a
+            >
+          </div>
+        </div>
+
+        <div class="space-y-2">
+          <h3 class="text-xl text-zinc-400">Who built this website?</h3>
+          <p class="w-4/5">
+            This website was built by <a
+              href="https://x.com/amarelodandara"
+              target="_blank"
+              class="text-blue-500"
+            >
+              Dandara</a
+            >, a <span class="italic">mostly technical</span> designer.
+          </p>
+        </div>
+
+        <div class="flex flex-col gap-4">
+          <a href="https://adandara.com" class="text-blue-500 border-text-blue-500 border-b w-fit"
+            >Check out her portfolio</a
+          >
+          <a
+            href="https://adandara.com/building-a-home-for-braggers"
+            class="text-blue-500 border-text-blue-500 border-b w-fit"
+            >Read more about this website development</a
+          >
+        </div>
+      </article>
+
+      <article id="how-to-submit" class="space-y-2">
+        <h2 class="text-2xl font-semibold text-blue-500">How to submit a /brag page?</h2>
+        <p class="w-4/5">
+          Open a pull request on the GitHub repo and add your entry to <code>brags.json</code>. The
+          <a href="/submit">submit page</a> has all the details.
+        </p>
+
+        <h3 class="text-xl text-zinc-400" id="how-to-remove">
+          How to remove my page from the list?
+        </h3>
+        <p class="w-4/5">
+          To remove your page from the list, simply <a
+            class="text-blue-500 underline"
+            href="https://github.com/nydndr/brag/issues/new">open an issue on GitHub</a
+          > or better yet open a PR removing your entry from the data file.
+        </p>
+      </article>
+
+      <article id="how-does-this-work" class="space-y-2">
+        <h2 class="text-2xl font-semibold text-blue-500">How does this website work?</h2>
+        <p class="w-4/5">
+          I could tell you, but better yet, I could show you! It is open source, have a blast
+          digging the <a class="text-blue-500 underline" href="https://github.com/nydndr/brag"
+            >code on GitHub</a
+          >.
+        </p>
+      </article>
+
+      <article id="suggestions" class="space-y-2">
+        <h2 class="text-2xl font-semibold text-blue-500">So... I have a suggestion!</h2>
+        <p class="w-4/5">
+          That's awesome! You can either open an issue - or better yet, a PR - on <a
+            class="text-blue-500 underline"
+            href="https://github.com/nydndr/brag">GitHub</a
+          > or @ me on <a class="text-blue-500 underline" href="https://X.com/amarelodandara"
+            >Twitter (@amarelodandara)</a
+          >, the everything app.
+        </p>
+      </article>
+    </div>
+  </div>
+</BaseLayout>
+
+<style>
+  .carousel-wrapper {
+    position: relative;
+  }
+
+  .carousel-wrapper::before,
+  .carousel-wrapper::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 3rem;
+    z-index: 1;
+    pointer-events: none;
+  }
+
+  .carousel-wrapper::before {
+    left: 0;
+    background: linear-gradient(to right, var(--color-background), transparent);
+  }
+
+  .carousel-wrapper::after {
+    right: 0;
+    background: linear-gradient(to left, var(--color-background), transparent);
+  }
+
+  .carousel {
+    overflow: hidden;
+    padding: 0.25rem 0;
+  }
+
+  .carousel-track {
+    display: flex;
+    gap: 0.5rem;
+    width: max-content;
+    animation: carousel-scroll 40s linear infinite;
+  }
+
+  .carousel:hover .carousel-track {
+    animation-play-state: paused;
+  }
+
+  .carousel-track a {
+    white-space: nowrap;
+    flex-shrink: 0;
+    font-size: 0.875rem;
+    color: inherit;
+    text-decoration: none;
+    border: 1px solid currentColor;
+    padding: 0.25rem 0.75rem;
+    opacity: 0.5;
+    transition: opacity 0.15s;
+  }
+
+  .carousel-track a:hover {
+    opacity: 1;
+  }
+
+  @keyframes carousel-scroll {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
+</style>
