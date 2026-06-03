@@ -8,5 +8,10 @@
     "name": "Your Name",
     "brag_url": "https://yoursite.com/brag",
     "description": "Replace this with real entries before deploying."
+  },
+  {
+    "name": "Dandara",
+    "brag_url": "https://adandara.com/brag",
+    "description": "The one behind this ;)"
   }
 ]
