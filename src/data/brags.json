@@ -5,13 +5,508 @@
     "description": "MySQL expert, screencaster, and the mind behind the /brag idea. Co-host of Mostly Technical."
   },
   {
-    "name": "Your Name",
-    "brag_url": "https://yoursite.com/brag",
-    "description": "Replace this with real entries before deploying."
-  },
-  {
     "name": "Dandara",
     "brag_url": "https://adandara.com/brag",
     "description": "The one behind this ;)"
+  },
+  {
+    "name": "Sara Soueidan",
+    "brag_url": "https://sarasoueidan.com/brag",
+    "description": "SVG and CSS specialist. Accessibility consultant, speaker, and author of practical front-end courses."
+  },
+  {
+    "name": "Adam Wathan",
+    "brag_url": "https://adamwathan.me/brag",
+    "description": "Creator of Tailwind CSS. Built tools used by millions of developers worldwide."
+  },
+  {
+    "name": "Cassidy Williams",
+    "brag_url": "https://cassidoo.co/brag",
+    "description": "Developer experience engineer, educator, and newsletter author. Known for making tech fun and approachable."
+  },
+  {
+    "name": "Josh Comeau",
+    "brag_url": "https://joshwcomeau.com/brag",
+    "description": "Front-end developer and educator. Writes deeply researched CSS and React tutorials with interactive demos."
+  },
+  {
+    "name": "Kent C. Dodds",
+    "brag_url": "https://kentcdodds.com/brag",
+    "description": "Open source contributor and educator. Creator of Testing Library and Epic Web course platform."
+  },
+  {
+    "name": "Maggie Appleton",
+    "brag_url": "https://maggieappleton.com/brag",
+    "description": "Designer, anthropologist, and developer. Known for illustrated essays on programming concepts."
+  },
+  {
+    "name": "Lee Robinson",
+    "brag_url": "https://leerob.io/brag",
+    "description": "VP of Product at Vercel. Writes extensively about Next.js, web performance, and developer experience."
+  },
+  {
+    "name": "Theo Browne",
+    "brag_url": "https://t3.gg/brag",
+    "description": "Founder of Ping Labs. Builder of T3 Stack, prolific TypeScript educator on YouTube."
+  },
+  {
+    "name": "Guillermo Rauch",
+    "brag_url": "https://rauchg.com/brag",
+    "description": "CEO of Vercel. Created Socket.io, Mongoose, and Next.js. Relentless builder."
+  },
+  {
+    "name": "Evan You",
+    "brag_url": "https://evanyou.me/brag",
+    "description": "Creator of Vue.js and Vite. Independently funded by the open source community."
+  },
+  {
+    "name": "Tania Rascia",
+    "brag_url": "https://taniarascia.com/brag",
+    "description": "Self-taught developer turned educator. Writes clear, comprehensive tutorials on JavaScript and the web."
+  },
+  {
+    "name": "Paul Graham",
+    "brag_url": "https://paulgraham.com/brag",
+    "description": "Co-founder of Y Combinator. Essay writer on startups, programming languages, and ideas."
+  },
+  {
+    "name": "DHH",
+    "brag_url": "https://dhh.dk/brag",
+    "description": "Creator of Ruby on Rails and Basecamp co-founder. Vocal about work-life balance and software craft."
+  },
+  {
+    "name": "Wes Bos",
+    "brag_url": "https://wesbos.com/brag",
+    "description": "Full-stack developer and course creator. Co-host of Syntax.fm, the leading web dev podcast."
+  },
+  {
+    "name": "Scott Tolinski",
+    "brag_url": "https://scotttolinski.com/brag",
+    "description": "Co-host of Syntax.fm. Creator of Level Up Tutorials and advocate for SvelteKit."
+  },
+  {
+    "name": "Ryan Florence",
+    "brag_url": "https://ryanflorence.com/brag",
+    "description": "Co-creator of React Router and Remix. Has been teaching React since before most people knew it existed."
+  },
+  {
+    "name": "Michael Jackson",
+    "brag_url": "https://mjackson.me/brag",
+    "description": "Co-creator of React Router and Remix. Long-time open source contributor to the JavaScript ecosystem."
+  },
+  {
+    "name": "Addy Osmani",
+    "brag_url": "https://addyosmani.com/brag",
+    "description": "Engineering manager at Google Chrome. Author of Learning JavaScript Design Patterns."
+  },
+  {
+    "name": "Una Kravets",
+    "brag_url": "https://una.im/brag",
+    "description": "CSS advocate at Google. Leads Chrome DevRel and co-hosts the CSS Podcast."
+  },
+  {
+    "name": "Chris Coyier",
+    "brag_url": "https://chriscoyier.net/brag",
+    "description": "Founder of CSS-Tricks. Co-founder of CodePen. Made CSS approachable for an entire generation of developers."
+  },
+  {
+    "name": "Ana Tudor",
+    "brag_url": "https://thebabydino.github.io/brag",
+    "description": "CSS and SVG geometry wizard. Produces mind-bending demos that push the limits of what browsers can render."
+  },
+  {
+    "name": "Lea Verou",
+    "brag_url": "https://lea.verou.me/brag",
+    "description": "CSS Working Group member. Creator of Prism.js and dozens of beloved web tools."
+  },
+  {
+    "name": "Zach Leatherman",
+    "brag_url": "https://www.zachleat.com/brag",
+    "description": "Creator of Eleventy. Web fonts expert and long-time Filament Group engineer."
+  },
+  {
+    "name": "Alex Russell",
+    "brag_url": "https://infrequently.org/brag",
+    "description": "Browser standards advocate. Has shaped the web platform from inside Google Chrome for over a decade."
+  },
+  {
+    "name": "Jake Archibald",
+    "brag_url": "https://jakearchibald.com/brag",
+    "description": "Chrome developer advocate. Spec editor for service workers and streams. Author of IDB-Keyval."
+  },
+  {
+    "name": "Surma",
+    "brag_url": "https://surma.dev/brag",
+    "description": "Web performance and WebAssembly specialist. Former Google Chrome developer advocate."
+  },
+  {
+    "name": "Jason Lengstorf",
+    "brag_url": "https://jason.energy/brag",
+    "description": "Staff developer advocate at Netlify. Hosts Learn With Jason livestream, helping the community build in public."
+  },
+  {
+    "name": "Jhey Tompkins",
+    "brag_url": "https://jhey.dev/brag",
+    "description": "Creative developer at Google. Known for delightful CSS animations and scroll-driven effects."
+  },
+  {
+    "name": "Kevin Powell",
+    "brag_url": "https://kevinpowell.co/brag",
+    "description": "The CSS evangelist on YouTube. Teaches CSS in depth with calm clarity to millions of subscribers."
+  },
+  {
+    "name": "Stephanie Eckles",
+    "brag_url": "https://thinkdobecreate.com/brag",
+    "description": "Senior developer advocate at Microsoft. Creator of ModernCSS and SmolCSS resources."
+  },
+  {
+    "name": "Dave Rupert",
+    "brag_url": "https://daverupert.com/brag",
+    "description": "Developer at Paravel. Co-host of ShopTalk Show. Contributor to web accessibility and design systems."
+  },
+  {
+    "name": "Jen Simmons",
+    "brag_url": "https://jensimmons.com/brag",
+    "description": "Apple Safari developer advocate. Designed CSS Grid Layout and Subgrid into the CSS specification."
+  },
+  {
+    "name": "Rachel Andrew",
+    "brag_url": "https://rachelandrew.co.uk/brag",
+    "description": "CSS Working Group member and Google DevRel lead. Wrote much of the CSS Grid specification documentation."
+  },
+  {
+    "name": "Ahmad Shadeed",
+    "brag_url": "https://ishadeed.com/brag",
+    "description": "Independent designer and developer from Palestine. Writes deep-dive CSS and design articles."
+  },
+  {
+    "name": "Robin Rendle",
+    "brag_url": "https://robinrendle.com/brag",
+    "description": "Designer and writer. Newsletters, essays, and sharp thinking about typography and the web."
+  },
+  {
+    "name": "Mina Markham",
+    "brag_url": "https://mina.codes/brag",
+    "description": "Senior engineer at Slack. Built the design system for Hillary Clinton's 2016 presidential campaign."
+  },
+  {
+    "name": "Harry Roberts",
+    "brag_url": "https://csswizardry.com/brag",
+    "description": "Independent web performance consultant. Helps large organizations ship faster, more resilient CSS."
+  },
+  {
+    "name": "Brad Frost",
+    "brag_url": "https://bradfrost.com/brag",
+    "description": "Creator of Atomic Design methodology. Wrote the book that changed how teams think about design systems."
+  },
+  {
+    "name": "Dan Abramov",
+    "brag_url": "https://overreacted.io/brag",
+    "description": "Co-creator of Redux and Create React App. Former React core team member at Meta."
+  },
+  {
+    "name": "Sophie Alpert",
+    "brag_url": "https://sophiebits.com/brag",
+    "description": "Former React engineering manager at Meta. Now building Extraordinary, a startup for working parents."
+  },
+  {
+    "name": "Matias Woloski",
+    "brag_url": "https://woloski.com/brag",
+    "description": "Co-founder and CTO of Auth0. Built identity infrastructure trusted by thousands of companies worldwide."
+  },
+  {
+    "name": "Caleb Porzio",
+    "brag_url": "https://calebporzio.com/brag",
+    "description": "Creator of Livewire and Alpine.js. Made interactive Laravel apps simple without a JavaScript framework."
+  },
+  {
+    "name": "Taylor Otwell",
+    "brag_url": "https://taylorotwell.com/brag",
+    "description": "Creator of Laravel. Built the most popular PHP framework and an entire ecosystem around it."
+  },
+  {
+    "name": "Freek Van der Herten",
+    "brag_url": "https://freek.dev/brag",
+    "description": "Prolific open source developer at Spatie. Maintains dozens of widely-used Laravel packages."
+  },
+  {
+    "name": "Monica Lent",
+    "brag_url": "https://monicalent.com/brag",
+    "description": "Founder of Affilimate. Writes candidly about SEO, bootstrapping, and building a software business."
+  },
+  {
+    "name": "Pieter Levels",
+    "brag_url": "https://levels.io/brag",
+    "description": "Bootstrapped founder of Nomad List and Remote OK. Builds profitable products solo, in public."
+  },
+  {
+    "name": "Marc Lou",
+    "brag_url": "https://marclou.beehiiv.com/brag",
+    "description": "Serial indie hacker. Launched dozens of micro-SaaS products and documents the journey openly."
+  },
+  {
+    "name": "Tony Dinh",
+    "brag_url": "https://tonydinh.com/brag",
+    "description": "Indie developer and maker. Creator of Black Magic for Twitter and several successful solo products."
+  },
+  {
+    "name": "Andrey Sitnik",
+    "brag_url": "https://sitnik.ru/brag",
+    "description": "Creator of PostCSS and Autoprefixer. Transformed how the industry processes and ships CSS."
+  },
+  {
+    "name": "Sindre Sorhus",
+    "brag_url": "https://sindresorhus.com/brag",
+    "description": "Most prolific npm package author in history. Maintains hundreds of open source JavaScript utilities."
+  },
+  {
+    "name": "TJ Holowaychuk",
+    "brag_url": "https://tjholowaychuk.com/brag",
+    "description": "Created Express.js, Koa, Mocha, Jade, and dozens of foundational Node.js packages."
+  },
+  {
+    "name": "Tobias Koppers",
+    "brag_url": "https://tobias.is/brag",
+    "description": "Creator of webpack. Built the module bundler that powered the modern JavaScript ecosystem for a decade."
+  },
+  {
+    "name": "Sebastian McKenzie",
+    "brag_url": "https://sebmck.com/brag",
+    "description": "Created Babel and Yarn. Former Meta engineer who reshaped JavaScript tooling twice before 30."
+  },
+  {
+    "name": "Feross Aboukhadijeh",
+    "brag_url": "https://feross.org/brag",
+    "description": "Creator of WebTorrent and StandardJS. Runs Socket, a supply-chain security company for npm."
+  },
+  {
+    "name": "Nadia Odunayo",
+    "brag_url": "https://nodunayo.com/brag",
+    "description": "Founder of The StoryGraph, a Goodreads alternative. Built and scaled it as a solo technical founder."
+  },
+  {
+    "name": "Charity Majors",
+    "brag_url": "https://charity.wtf/brag",
+    "description": "Co-founder and CTO of Honeycomb. Leading voice on observability-driven development."
+  },
+  {
+    "name": "Lara Hogan",
+    "brag_url": "https://larahogan.me/brag",
+    "description": "Engineering leadership coach and author. Wrote Resilient Management and Demystifying Public Speaking."
+  },
+  {
+    "name": "Kelsey Hightower",
+    "brag_url": "https://kelseyhightower.com/brag",
+    "description": "Former Google Kubernetes evangelist. Legendary conference speaker and open source contributor."
+  },
+  {
+    "name": "Julia Evans",
+    "brag_url": "https://jvns.ca/brag",
+    "description": "Creator of Wizard Zines. Makes complex systems like DNS and curl delightful through comics and writing."
+  },
+  {
+    "name": "Simon Willison",
+    "brag_url": "https://simonwillison.net/brag",
+    "description": "Co-creator of Django. Founder of Datasette. Prolific blogger on AI tools and data journalism."
+  },
+  {
+    "name": "David Heinemeier Hansson",
+    "brag_url": "https://dhh.dk/brag",
+    "description": "Created Ruby on Rails. Co-founded Basecamp and HEY. Outspoken on craft, work culture, and software."
+  },
+  {
+    "name": "Thorsten Ball",
+    "brag_url": "https://thorstenball.com/brag",
+    "description": "Author of Writing an Interpreter in Go and Writing a Compiler in Go. Staff engineer at Zed."
+  },
+  {
+    "name": "Mitchell Hashimoto",
+    "brag_url": "https://mitchellh.com/brag",
+    "description": "Co-founder of HashiCorp. Created Vagrant, Packer, Terraform, and Vault. Now building Ghostty terminal."
+  },
+  {
+    "name": "Primeagen",
+    "brag_url": "https://theprimeagen.tv/brag",
+    "description": "Senior Netflix engineer and Twitch educator. Passionate about Neovim, Rust, and deep technical mastery."
+  },
+  {
+    "name": "Fireship",
+    "brag_url": "https://fireship.io/brag",
+    "description": "Creator of the fastest tech explainers on YouTube. 100-second videos taught millions of developers."
+  },
+  {
+    "name": "Takuya Matsuyama",
+    "brag_url": "https://craftz.dog/brag",
+    "description": "Indie developer from Japan. Creator of Inkdrop note-taking app and open-source dev log author."
+  },
+  {
+    "name": "Zeno Rocha",
+    "brag_url": "https://zenorocha.com/brag",
+    "description": "Creator of Clipboard.js. VP of Developer Experience at Resend. Built tools used on millions of sites."
+  },
+  {
+    "name": "Delba de Oliveira",
+    "brag_url": "https://delba.dev/brag",
+    "description": "Developer advocate at Vercel. Builds educational content on Next.js App Router and React Server Components."
+  },
+  {
+    "name": "Lydia Hallie",
+    "brag_url": "https://lydiahallie.io/brag",
+    "description": "Staff developer advocate at Vercel. Creates widely-shared visual explanations of JavaScript internals."
+  },
+  {
+    "name": "Swyx",
+    "brag_url": "https://swyx.io/brag",
+    "description": "Author of The Coding Career Handbook. Developer advocate and AI engineer. Champion of learning in public."
+  },
+  {
+    "name": "Dax Raad",
+    "brag_url": "https://dax.sh/brag",
+    "description": "Creator of SST and Ion. Builds opinionated cloud infrastructure tools for full-stack developers."
+  },
+  {
+    "name": "James Q Quick",
+    "brag_url": "https://jamesqquick.com/brag",
+    "description": "Developer advocate and educator. Hosts Learn Build Teach newsletter and YouTube channel."
+  },
+  {
+    "name": "Erin Kissane",
+    "brag_url": "https://erinkissane.com/brag",
+    "description": "Content strategist and researcher. Co-author of the Mastodon-related COVID data research project."
+  },
+  {
+    "name": "Hilary Mason",
+    "brag_url": "https://hilarymason.com/brag",
+    "description": "Data scientist and entrepreneur. Former Chief Scientist at Bitly and founder of Fast Forward Labs."
+  },
+  {
+    "name": "Lenny Rachitsky",
+    "brag_url": "https://lennyrachitsky.com/brag",
+    "description": "Former Airbnb PM. Author of Lenny's Newsletter, the top product management resource on Substack."
+  },
+  {
+    "name": "Corey Quinn",
+    "brag_url": "https://lastweekinaws.com/brag",
+    "description": "Cloud economist at The Duckbill Group. Known for savage but accurate takes on AWS complexity."
+  },
+  {
+    "name": "Forrest Brazeal",
+    "brag_url": "https://forrestbrazeal.com/brag",
+    "description": "Head of developer media at Google Cloud. Cloud cartoonist and author of the Read Aloud Cloud."
+  },
+  {
+    "name": "Randall Kanna",
+    "brag_url": "https://randallkanna.com/brag",
+    "description": "Author of The Standout Developer. Helps early-career engineers land their first jobs in tech."
+  },
+  {
+    "name": "Emma Bostian",
+    "brag_url": "https://compiled.blog/brag",
+    "description": "Software engineer at Spotify. Co-host of Ladybug Podcast. Advocates for inclusion in tech."
+  },
+  {
+    "name": "Ali Spittel",
+    "brag_url": "https://ali.dev/brag",
+    "description": "Senior developer advocate at AWS Amplify. Co-host of Ladybug Podcast. Teaches coding to beginners."
+  },
+  {
+    "name": "Kelly Vaughn",
+    "brag_url": "https://kellyvaughn.co/brag",
+    "description": "Founder of The Taproom Agency. Built and scaled a successful Shopify development shop."
+  },
+  {
+    "name": "Shawn Wang",
+    "brag_url": "https://swyx.io/brag",
+    "description": "Head of AI at Smol AI. Created the Learn in Public movement that reshaped developer careers."
+  },
+  {
+    "name": "Tyler McGinnis",
+    "brag_url": "https://tylermcginnis.com/brag",
+    "description": "Founder of UI.dev. Created some of the most-watched React and JavaScript course content online."
+  },
+  {
+    "name": "Brian Lovin",
+    "brag_url": "https://brianlovin.com/brag",
+    "description": "Product engineer at GitHub. Runs Security Checklist and maintains a meticulous personal website."
+  },
+  {
+    "name": "Amelia Wattenberger",
+    "brag_url": "https://wattenberger.com/brag",
+    "description": "Data visualization specialist and author of Fullstack D3. Creates beautiful interactive data stories."
+  },
+  {
+    "name": "Shirley Wu",
+    "brag_url": "https://sxywu.com/brag",
+    "description": "Independent data visualization engineer. Creates award-winning visual data art and educational content."
+  },
+  {
+    "name": "Observable HQ",
+    "brag_url": "https://observablehq.com/brag",
+    "description": "Platform for exploratory data analysis. Created by the maker of D3.js, Mike Bostock."
+  },
+  {
+    "name": "Anthony Fu",
+    "brag_url": "https://antfu.me/brag",
+    "description": "Core contributor to Vue, Vite, and Nuxt. Creator of Vitest, UnoCSS, and hundreds of open source tools."
+  },
+  {
+    "name": "Patak",
+    "brag_url": "https://patak.dev/brag",
+    "description": "Core team member of Vite and Vitest. Helps maintain the fast-growing Vite ecosystem."
+  },
+  {
+    "name": "Shu Ding",
+    "brag_url": "https://shud.in/brag",
+    "description": "Core React and Next.js team member at Vercel. Creator of SWR data fetching library."
+  },
+  {
+    "name": "Rich Harris",
+    "brag_url": "https://rich-harris.dev/brag",
+    "description": "Creator of Svelte and SvelteKit. Principal engineer at Vercel. Thinks deeply about JavaScript compilers."
+  },
+  {
+    "name": "Matteo Collina",
+    "brag_url": "https://nodeland.dev/brag",
+    "description": "Node.js Technical Steering Committee member. Creator of Fastify, the fastest Node.js web framework."
+  },
+  {
+    "name": "Dominik Dorfmeister",
+    "brag_url": "https://tkdodo.eu/brag",
+    "description": "Maintainer of TanStack Query. Writes the definitive blog series on practical React Query usage."
+  },
+  {
+    "name": "Tanner Linsley",
+    "brag_url": "https://tannerlinsley.com/brag",
+    "description": "Creator of TanStack: Query, Table, Router, Form, and more. Building the headless UI library ecosystem."
+  },
+  {
+    "name": "Jack Herrington",
+    "brag_url": "https://jackherrington.com/brag",
+    "description": "Principal engineer and educator. Runs Blue Collar Coder YouTube channel on advanced React patterns."
+  },
+  {
+    "name": "Nate Moore",
+    "brag_url": "https://natemore.dev/brag",
+    "description": "Core team member of Astro. Helped design the islands architecture and component integrations."
+  },
+  {
+    "name": "Fred K. Schott",
+    "brag_url": "https://fredkschott.com/brag",
+    "description": "Co-creator of Astro and Snowpack. Pushing the web back toward simplicity and performance."
+  },
+  {
+    "name": "Ben Holmes",
+    "brag_url": "https://bholmes.dev/brag",
+    "description": "Astro core team engineer at Astro. Created Slinkity and advocates for progressive enhancement."
+  },
+  {
+    "name": "Theo Browne",
+    "brag_url": "https://t3.gg/brag",
+    "description": "Founder of Ping. Created T3 Stack and T3 Turbo. Loudly opinionated about TypeScript and Next.js."
+  },
+  {
+    "name": "Brandon Bayer",
+    "brag_url": "https://flightcontrol.dev/brag",
+    "description": "Creator of Blitz.js fullstack React framework. Now building Flightcontrol for AWS deployments."
   }
 ]

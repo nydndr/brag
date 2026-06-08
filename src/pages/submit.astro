@@ -7,85 +7,83 @@ import BaseLayout from '../layouts/BaseLayout.astro';
   description="Submit your /brag page to the public directory."
   hideFooter={true}
 >
-  <div class="max-w-6xl">
-    <div>
-      <h1 class="text-9xl tracking-tight font-semibold leading-tight mb-2 text-blue-500/15">
-        Submit
-      </h1>
-    </div>
+  <div class="space-y-12">
+    <article class="space-y-8">
+      <div class="space-y-2">
+        <h2 class="font-display text-zinc-400 text-2xl">How to submit</h2>
+        <p class="w-2/3 leading-relaxed">
+          No accounts, no forms — just a pull request. Fork the repo, add your entry, open a PR.
+        </p>
+      </div>
 
-    <div class="leading-loose mt-10 grid grid-cols-2 gap-12">
-      <article id="how-to-submit" class="space-y-4">
-        <h2 class="text-2xl font-semibold text-blue-500">How to submit</h2>
+      <ol class="space-y-8">
+        <li class="space-y-2">
+          <h3 class="font-display text-zinc-400 text-lg">1. Fork the repository</h3>
+          <p class="w-2/3 leading-relaxed">
+            Start by forking the <a
+              href="https://github.com/nydndr/brag"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-blue-500 border-b border-blue-500">repository on GitHub</a
+            >. This creates your own copy to make changes in.
+          </p>
+        </li>
 
-        <ol class="space-y-6">
-          <li class="space-y-1">
-            <h3 class="text-xl text-zinc-400">1. Fork the repository</h3>
-            <p class="w-4/5">
-              Start by forking the <a
-                href="https://github.com/nydndr/brag"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="text-blue-500">repository on GitHub</a
-              >. This creates your own copy to make changes in.
-            </p>
-          </li>
+        <li class="space-y-2">
+          <h3 class="font-display text-zinc-400 text-lg">2. Add your entry</h3>
+          <p class="w-2/3 leading-relaxed">
+            Open <code class="text-xs font-mono bg-gray-100 px-1 py-0.5">src/data/brags.json</code>
+            and paste your generated JSON at the end of the array.
+          </p>
+        </li>
 
-          <li class="space-y-1">
-            <h3 class="text-xl text-zinc-400">2. Add your entry</h3>
-            <p class="w-4/5">
-              Open <code class="text-xs font-mono bg-gray-100 px-1 py-0.5">src/data/brags.json</code
-              > and paste your generated JSON at the end of the array.
-            </p>
-          </li>
+        <li class="space-y-2">
+          <h3 class="font-display text-zinc-400 text-lg">3. Open a pull request</h3>
+          <p class="w-2/3 leading-relaxed">
+            Open a pull request titled <code class="text-xs font-mono bg-gray-100 px-1 py-0.5">Add [Your Name]</code>.
+            That's it — no account needed beyond GitHub.
+          </p>
+        </li>
+      </ol>
+    </article>
 
-          <li class="space-y-1">
-            <h3 class="text-xl text-zinc-400">3. Open a pull request</h3>
-            <p class="w-4/5">
-              Open a pull request titled <code class="text-xs font-mono bg-gray-100 px-1 py-0.5"
-                >Add [Your Name]</code
-              >. That's it — no account needed beyond GitHub.
-            </p>
-          </li>
-        </ol>
-      </article>
+    <article class="space-y-8">
+      <div class="space-y-2">
+        <h2 class="font-display text-zinc-400 text-2xl">Your entry</h2>
+        <p class="w-2/3 leading-relaxed">Fill in your details and copy the generated JSON to paste into the file.</p>
+      </div>
 
-      <article id="your-entry" class="space-y-4">
-        <h2 class="text-2xl font-semibold text-blue-500">Your entry</h2>
-
-        <div class="space-y-4">
-          <div>
-            <label for="f-name" class="block text-sm font-medium text-gray-700 mb-1">Name</label>
-            <input
-              id="f-name"
-              type="text"
-              placeholder="Your name"
-              class="w-full border border-gray-200 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition"
-            />
+      <div class="w-2/3 space-y-4">
+        <div>
+          <label for="f-name" class="block text-sm text-zinc-400 mb-1">Name</label>
+          <input
+            id="f-name"
+            type="text"
+            placeholder="Your name"
+            class="w-full border border-gray-200 px-3 py-2 text-sm bg-transparent focus:outline-none focus:border-blue-500 transition-colors"
+          />
+        </div>
+        <div>
+          <label for="f-url" class="block text-sm text-zinc-400 mb-1">Brag URL</label>
+          <input
+            id="f-url"
+            type="url"
+            placeholder="https://yoursite.com/brag"
+            class="w-full border border-gray-200 px-3 py-2 text-sm bg-transparent focus:outline-none focus:border-blue-500 transition-colors"
+          />
+        </div>
+        <div>
+          <div class="flex justify-between mb-1">
+            <label for="f-desc" class="block text-sm text-zinc-400">Description</label>
+            <span id="char-count" class="text-xs text-gray-400">0 / 200</span>
           </div>
-          <div>
-            <label for="f-url" class="block text-sm font-medium text-gray-700 mb-1">Brag URL</label>
-            <input
-              id="f-url"
-              type="url"
-              placeholder="https://yoursite.com/brag"
-              class="w-full border border-gray-200 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition"
-            />
-          </div>
-          <div>
-            <div class="flex justify-between mb-1">
-              <label for="f-desc" class="block text-sm font-medium text-gray-700">Description</label
-              >
-              <span id="char-count" class="text-xs text-gray-400">0 / 200</span>
-            </div>
-            <textarea
-              id="f-desc"
-              placeholder="Who you are and what you do. Keep it under 200 characters."
-              rows="3"
-              maxlength="200"
-              class="w-full border border-gray-200 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition resize-none"
-            ></textarea>
-          </div>
+          <textarea
+            id="f-desc"
+            placeholder="Who you are and what you do. Keep it under 200 characters."
+            rows="3"
+            maxlength="200"
+            class="w-full border border-gray-200 px-3 py-2 text-sm bg-transparent focus:outline-none focus:border-blue-500 transition-colors resize-none"
+          ></textarea>
         </div>
 
         <div class="rounded overflow-hidden border border-gray-100">
@@ -106,13 +104,12 @@ import BaseLayout from '../layouts/BaseLayout.astro';
   "description": ""
 }`}</pre>
         </div>
+
         <p class="text-xs text-gray-400">
-          Paste this object at the end of the array in <code class="font-mono"
-            >src/data/brags.json</code
-          >
+          Paste this object at the end of the array in <code class="font-mono">src/data/brags.json</code>
         </p>
-      </article>
-    </div>
+      </div>
+    </article>
   </div>
 </BaseLayout>
 

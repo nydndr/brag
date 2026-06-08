@@ -1,15 +1,16 @@
 @import 'tailwindcss';
 
 @theme {
-  --font-family-sans: 'Anek Bangla', system-ui, -apple-system, sans-serif;
-  --font-family-mono: 'Source Code Pro', ui-monospace, 'Cascadia Code', Menlo, Consolas, monospace;
+  --font-display: 'Anek Bangla', system-ui, -apple-system, sans-serif;
+  --font-body: 'Lato', system-ui, -apple-system, sans-serif;
+  --font-mono: 'Source Code Pro', ui-monospace, 'Cascadia Code', Menlo, Consolas, monospace;
+  --color-background: oklch(98.4% 0.003 247.858);
+  --color-foreground: #111827;
 }
 
-:root {
-  --font-sans: 'Anek Bangla', system-ui, -apple-system, sans-serif;
-  --font-mono: 'Source Code Pro', ui-monospace, 'Cascadia Code', Menlo, Consolas, monospace;
-  --color-background: #ffffff;
-  --color-foreground: #111827;
+::selection {
+  background-color: rgba(37, 99, 235, 0.7);
+  color: white;
 }
 
 .outline-text {
