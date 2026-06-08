@@ -23,6 +23,7 @@ Built with Astro + Tailwind CSS v4. Deployed to Cloudflare Pages. No database �
 Or use the form at `/submit` on the live site to generate the JSON automatically.
 
 **Rules:**
+
 - All three fields are required
 - `brag_url` must start with `https://`
 - `description` max 200 characters
@@ -82,18 +83,18 @@ Replace `YOUR_USERNAME` with your GitHub username.
 
 Fill in these settings:
 
-| Field | Value |
-|---|---|
-| Project name | `slashbrag` |
-| Production branch | `main` |
-| Build command | `npm run build` |
-| Build output directory | `dist` |
+| Field                  | Value           |
+| ---------------------- | --------------- |
+| Project name           | `slashbrag`     |
+| Production branch      | `main`          |
+| Build command          | `npm run build` |
+| Build output directory | `dist`          |
 
 Scroll down to **Environment variables** and add:
 
-| Variable | Value |
-|---|---|
-| `NODE_VERSION` | `22` |
+| Variable       | Value |
+| -------------- | ----- |
+| `NODE_VERSION` | `22`  |
 
 Click **Save and Deploy**.
 
@@ -153,6 +154,31 @@ src/
 - [Astro](https://astro.build) — static site builder, zero JS shipped by default
 - [Tailwind CSS v4](https://tailwindcss.com) — utility-first CSS via `@tailwindcss/vite`
 - [Cloudflare Pages](https://pages.cloudflare.com) — hosting + CI/CD
+
+---
+
+## What's been built
+
+- **Two-column layout** — fixed 1/4 sidebar with site identity + nav; 3/4 main content area
+- **Sidebar divider** — gradient line visible only in the center 60% of the viewport, gray at rest, blue while scrolling; masked blue shadow on scroll
+- **Scroll-triggered fade overlays** — top and bottom edges fade content in/out with backdrop blur; hidden on page load, appear after 40px of scroll
+- **Font system** — `font-display` (Anek Bangla) for headings, `font-body` (Lato) for body text, `font-mono` (Source Code Pro) for code
+- **CSS variable theming** — `--color-background` wired to body background and fade overlays so color changes propagate everywhere
+- **Active nav state** — current page highlighted via `Astro.url.pathname`
+- **Odometer counter** — entry count animates digit-by-digit on page load, blue during spin, fades to gray on landing
+- **Custom text selection** — blue-600 at 70% opacity with white text
+- **About page** — single-column, consistent heading hierarchy, all external links open in new tab with border-bottom style
+- **Submit page** — matches about page layout; form generates live JSON preview with copy button
+
+## Still to do
+
+- [ ] **Mobile layout** — sidebar collapses or shifts to top nav on small viewports
+- [ ] **Client-side search** — filter rows by name/description as you type
+- [ ] **Sort toggle** — alphabetical vs. newest-first
+- [ ] **OG image** — social preview card for link sharing
+- [ ] **Footer** — restore and redesign the carousel footer, now commented out
+- [ ] **Remove dummy data** — replace the 100 test entries in `brags.json` with real submissions before launch
+- [ ] **Real Submit button** — current nav Submit link needs a distinct style separate from the active state indicator
 
 ---
 
